@@ -1,7 +1,21 @@
 # Lab 7 Test Cases
 
-# Import the pytest library
+
+
+
+#Rember to type in terminal to start the test is first "python3 -m pytest"
+#Then type in ".\venv\Scripts\activate" to activate the virtual environment
+#Then type in "pip3 stall pytest" to start the test
+
 import pytest
+
+# As you add functions to Lab7.py, import them here (uncomment the lines)
+from Lab7 import calculate_rectangle_area
+
+from Lab7 import calculate_hypotenuse
+from Lab7 import is_even
+from Lab7 import find_maximum
+#from Lab7 import grade_calculator
 
 # As you add functions to Lab7.py, import them here (uncomment the lines)
 # from Lab7 import calculate_rectangle_area
@@ -30,8 +44,8 @@ def test_pythagorean_theorem():
 
 
 # Test cases for checking if a number is even
-def test_is_even():
-    assert is_even(2) is True, "Even calculation failed for 2"
+def is_even():
+    assert is_even(2) is True, "Even calculation faipled for 2"
     assert is_even(7) is False, "Even calculation failed for 7"
     assert is_even(0) is True, "Even calculation failed for 0"
     assert is_even(11) is False, "Even calculation failed for 11"
